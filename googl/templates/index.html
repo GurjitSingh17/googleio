@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+<h1>Past 24 hours</h1>
+<ol>
+    {% for url in past_24 %}
+        <li> <a href="{{url.url}}">{{url.url}}</a> True url: {{url.true_url}}</li>
+    {% endfor %}
+</ol>
+<h1>Everything Else</h1>
+<ol>
+    {% for url in all_else %}
+        <li> <a href="{{url.url}}">{{url.url}}</a> True url: {{url.true_url}}</li>
+    {% endfor %}
+</ol>
+</body>
+</html>
